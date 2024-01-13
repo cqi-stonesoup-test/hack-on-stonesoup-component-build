@@ -11,9 +11,9 @@
   ],
   "packageRules": [
     {
-      "matchPackagePrefixes": [
-        "registry.access.redhat.com",
-      ]
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["registry.access.redhat.com/ubi9/ubi"],
+      "versioning": "redhat"
     }
   ]
 }
