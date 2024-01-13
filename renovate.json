@@ -15,6 +15,5 @@
       "matchPackageNames": ["registry.access.redhat.com/ubi9/ubi"],
       "versioning": "redhat"
     }
-  ],
-  "prFooter": "Footer message"
+  ]
 }
