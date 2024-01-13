@@ -8,5 +8,12 @@
       "depNameTemplate": "containers/BuildSourceImage",
       "extractVersionTemplate": "^v(?<version>.*)(: .+)?$"
     }
+  ],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": [
+        "registry.access.redhat.com",
+      ]
+    }
   ]
 }
