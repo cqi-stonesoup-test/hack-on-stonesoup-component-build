@@ -7,15 +7,13 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "containers/BuildSourceImage",
       "extractVersionTemplate": "^v(?<version>.*)(: .+)?$"
-    },
+    }
+  ],
+  "packageRules": [
     {
-      "fileMatch": ["^Dockerfile$"],
-      "matchStrings": [
-        "registry.access.redhat.com/ubi9/ubi:(?<currentValue>[0-9.-]+?)\\n"
-      ],
-      "datasourceTemplate": "docker",
-      "depNameTemplate": "registry.access.redhat.com/ubi9/ubi",
-      "extractVersionTemplate": "^registry.access.redhat.com/ubi9/ubi:(?<version>[0-9.-]+)$"
+      "matchPackagePrefixes": [
+        "registry.access.redhat.com",
+      ]
     }
   ]
 }
